@@ -1,81 +1,54 @@
-# Express.js + Prisma + MongoDB Starter Template
+<!-- prettier-ignore -->
+<p align="center">
+<img src="public/logo256.png" width="128px" />
+<h1>📝React.js Todo App</h1>
+</p>
 
-This is a template for a simple To Do List web app that consists of a REST API and a simple front end UI.
+## [https://react-cool-todo-app.netlify.app/](https://react-cool-todo-app.netlify.app/)
 
-<p align="center"><img src="screenshot.png" width="90%" /></p>
+<p align="center">
 
-The app uses [Express.js](https://expressjs.com) as the foundation for serving both the REST API back end and the front end.
-[Prisma](https://prisma.io) is used as the ORM to define the data model and interface to the [MongoDB](https://mongodb.com) database.
+<img src="public/screenshots/iPhone Mockup.png" width="400px" />
+</p>
 
-## Using this Starter Template
+## ⚡ Features
 
-This repo can be used as an [Adaptable.io](https://adaptable.io) Starter.
-For instructions on using this repo as a template and deploying to the Adaptable Cloud in just a few clicks, check out the [Starter Guide](https://adaptable.io/docs/starters/express-prisma-mongo-starter).
+- **Local Storage**: Save all your tasks locally.
+- **Custom Emojis**: The app features different emoji styles to choose from, including Apple, Facebook, Twitter, Google and NATIVE!
+- **It has a clean and responsive design**, ensuring a smooth user experience across different devices.
+- **Customizable Categories**: Users can create and personalize task categories to suit their preferences.
+- **Search Tasks**: Search functionality allows you to filter tasks by name or description, making it easy to find what you need.
+- **Task Reading Aloud**: Option to have tasks read aloud, with a selection of voices to choose from.
+- **Import/Export Tasks**: Users can now import and export tasks to/from JSON files. This feature allows users to back up their tasks or transfer them to other devices easily.
+- **Works offline**: This app is a Progressive Web App (PWA), which means it can be installed on your device and used even when you're offline. You can access and manage your tasks without an internet connection, ensuring uninterrupted productivity.
 
-## Running a local dev environment
+## 📷 Screenshots
 
-All of the following instructions assume you are in the repo root directory.
+<img src="public/screenshots/ss1.png" width="350px" />
 
-### 1. Install Node.js modules
+<img src="public/screenshots/ss2.png" width="350px" />
 
-```console
-yarn
-```
+<img src="public/screenshots/ss3.png" width="350px" />
 
-### 2. Run MongoDB locally
+<img src="public/screenshots/ss4.png" width="350px" />
 
-The app requires a database to store the data for the REST API.
-You can run a MongoDB cluster on your local development system if you have Docker installed.
+<img src="public/screenshots/ss5.png" width="350px" />
 
-To run a MongoDB cluster using Docker:
+<img src="public/screenshots/ss6.png" width="350px" />
 
-```console
-yarn run mongo-start
-```
+<img src="public/screenshots/sspc1.png" width="650px" />
 
-To later stop the MongoDB cluster:
+## 🚀 Performance
 
-> **WARNING**: All data stored in the local cluster will be deleted when the container is stopped.
-> For information on persisting the database data, see [adaptable/mongo-replica-set](https://github.com/adaptable/mongo-replica-set).
+<img src="public/screenshots/performance.png" width="600px" />
 
-```console
-yarn run mongo-stop
-```
+## ⚙️ Installation
 
-### 3. Set DATABASE_URL
+To install and run the project locally, follow these steps:
 
-The app uses the environment variable `DATABASE_URL` to connect to your MongoDB instance.
-Use a `.env` file to set `DATABASE_URL` in your local dev environment.
-The included `sample.env` file contains the correct `DATABASE_URL` to connect to the local cluster.
+- Clone the repository: `git clone https://github.com/maciekt07/TodoApp.git`
+- Navigate to the project directory: `cd TodoApp`
+- Install the dependencies: `npm install`
+- Start the development server: `npm run dev`
 
-To set `DATABASE_URL` to connect to your local MongoDB cluster running in Docker, copy the `sample.env` file to `.env`:
-
-```console
-cp sample.env .env
-```
-
-### 4. Start the app
-
-```console
-yarn run dev
-```
-
-> **NOTE**: By default, the app listens on port 3000. To use a different port, set the `PORT` environment variable to the desired port number.
-
-### 5. Connect to your app
-
-Use a web browser to connect to [http://localhost:3000](http://localhost:3000)
-
-## Source Code
-
-### REST API (back end)
-
-The Prisma schema (data model) for the REST API can be found in `prisma/schema.prisma`.
-The implementation of the `/todos` REST API endpoint is in `src/routes/todos.js`.
-
-### Web UI (front end)
-
-The layout and static portions of the front end can be found in `src/views/index.hbs`.
-The dynamic part of the front end is in `public/js/client.js`.
-
-<p align="center"><a href="https://adaptable.io"><img src="https://adaptable.io/img/color lockup.svg" height="50px" alt="Adaptable.io" /></a></p>
+The app will now be running at [http://localhost:5173/](http://localhost:5173/).
